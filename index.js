@@ -16,7 +16,7 @@ const sessionStore = MongoStore.create({
 
 // Session options with cookie settings
 const sessionOptions = {
-    secret: 'some secret stuff dawg',
+    secret: 'some secret stuff dawg',  
     resave: false,
     saveUninitialized: true,
     store: sessionStore,
@@ -38,4 +38,4 @@ app.get('/', (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`listening on port ${PORT}`);
-});
+}); 
